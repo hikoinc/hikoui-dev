@@ -1,0 +1,31 @@
+{
+  "$schema": "https://turborepo.com/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "eslint:fix": {
+      "dependsOn": ["^eslint:fix"]
+    },
+    "eslint": {
+      "dependsOn": ["^eslint"]
+    },
+    "typescheck": {
+      "dependsOn": ["^typescheck"]
+    },
+    "sort-package-json": {
+      "dependsOn": ["^sort-package-json"]
+    },
+    "sort-package-json:check": {
+      "dependsOn": ["^sort-package-json:check"]
+    },
+    "depcheck": {
+      "dependsOn": ["^depcheck"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"]
+    }
+  }
+}

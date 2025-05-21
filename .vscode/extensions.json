@@ -1,0 +1,36 @@
+{
+  "recommendations": [
+    // ESLint integration for linting JavaScript/TypeScript
+    "dbaeumer.vscode-eslint",
+
+    // SonarLint for on-the-fly code quality and security feedback
+    "sonarsource.sonarlint-vscode",
+
+    // Highlights errors and warnings inline for faster fix
+    "usernamehw.errorlens",
+
+    // Prettier code formatter
+    "esbenp.prettier-vscode",
+
+    // GitHub Pull Request and Issues Management
+    "github.vscode-pull-request-github",
+
+    // TypeScript language support extension
+    "ms-vscode.vscode-typescript-next",
+
+    // Tailwind CSS IntelliSense for utility class suggestions
+    "bradlc.vscode-tailwindcss",
+
+    // Show TODO comments clearly in your project
+    "gruntfuggly.todo-tree",
+
+    // Collaborative real-time editing
+    "ms-vsliveshare.vsliveshare",
+
+    // JavaScript performance profiling tool
+    "ms-vscode.vscode-js-profile-flame",
+
+    // Support for MDX files (Markdown + JSX)
+    "unifiedjs.vscode-mdx"
+  ]
+}

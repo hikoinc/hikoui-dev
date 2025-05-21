@@ -1,0 +1,29 @@
+{
+  // Use Prettier as the default formatter for all languages
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Use Prettier specifically for JavaScript files (overrides default)
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Automatically fix all fixable issues on save (including ESLint and Prettier)
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+
+  // Enable ESLint validation for JavaScript and TypeScript (including React)
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+
+  // Automatically detect ESLint working directories (useful for monorepos)
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+
+  // Use the project's installed TypeScript version instead of VSCode's bundled one
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  // Recognize Tailwind CSS class functions for proper IntelliSense and linting
+  "tailwindCSS.classFunctions": ["cva", "cx", "twMerge"],
+
+  // Increase terminal scrollback buffer to 10,000 lines for better history access
+  "terminal.integrated.scrollback": 10000
+}
