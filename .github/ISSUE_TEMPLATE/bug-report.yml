@@ -1,0 +1,129 @@
+name: "Bug report"
+title: "[BUG] - YOUR_ISSUE_TITLE_HERE_REPLACE_ME"
+description: Create a report to help us improve
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue.
+
+        This issue tracker is for reporting bugs found in the [Hikoui GitHub repository](https://github.com/hikoinc/hikoui/).
+
+        If you're looking for help or usage guidance, please consider:
+          - [Hikoui Discussions](https://github.com/hikoinc/hikoui/discussions)
+          - [Hikoui Discord](https://discord.gg/gdhSKhhc)
+
+        Before submitting this issue, please check the following places to ensure it has not already been reported or resolved:
+          - [Open Pull Requests](https://github.com/hikoinc/hikoui/pulls?q=is%3Apr+is%3Aopen+sort%3Aupdated-desc)
+          - [Closed Issues](https://github.com/hikoinc/hikoui/issues?q=is%3Aissue+sort%3Aupdated-desc+is%3Aclosed)
+          - [Hikoui Discussions](https://github.com/hikoinc/hikoui/discussions)
+
+  - type: checkboxes
+    id: duplicate_check
+    attributes:
+      label: Prior Investigation
+      description: Please confirm that you have already checked for duplicate issues.
+      options:
+        - label: I have searched existing issues, discussions, and pull requests to confirm this is not a duplicate.
+          required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Hikoui Version
+      description: |
+        Please provide the version of Hikoui you are using.
+        For example:
+        - Global: 2.4.2
+        - Package: @hikoui/button@2.0.34
+      placeholder: e.g. 2.4.2
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: Provide a clear and concise description of the issue.
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Example Website or App
+      description: |
+        If applicable, share a minimal example where the issue occurs.
+        Avoid localhost URLs.
+        StackBlitz or GitHub repo links are preferred.
+      placeholder: e.g. https://stackblitz.com/edit/... OR GitHub repo link
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Describe how to reproduce the bug step by step.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
+      placeholder: As a user, I expected ___ behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: Describe what actually happened.
+      placeholder: Instead, I observed ___.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots_or_videos
+    attributes:
+      label: Screenshots or Videos
+      description: If applicable, add screenshots or a video to help illustrate the problem.
+      placeholder: You can drag files into this area.
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating System
+      description: The operating system where the issue occurred.
+      placeholder: e.g. macOS 14.5, Windows 11, Ubuntu 22.04
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser_type
+    attributes:
+      label: Browser
+      description: Select all browsers where this issue can be reproduced.
+      options:
+        - "Chrome"
+        - "Firefox"
+        - "Safari"
+        - "Edge"
+        - "Opera"
+        - "Other (please describe in context)"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Device / Environment Info
+      description: Optionally provide device type, screen resolution, or network context.
+      placeholder: e.g. iPhone 14 Pro, 1920x1080 Desktop, Slow 3G
