@@ -13,7 +13,7 @@ Once ready, we’ll update this document with clear guidelines on how to get inv
 If you have any questions or ideas in the meantime, feel free to reach out via:
 
 - [GitHub Discussions](https://github.com/hikoinc/hikoui/discussions)
-- [Discord](https://discord.gg/gdhSKhhc)
+- [Discord](https://discord.gg/HXHzYvNrfV)
 - [Email](anuchit.boonsom@gmail.com)
 
 We really appreciate your support, and we’re looking forward to building Hikoui together with the community!
