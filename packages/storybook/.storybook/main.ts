@@ -2,9 +2,13 @@ import type {StorybookConfig} from "@storybook/react-vite";
 
 import {join, dirname} from "path";
 
-/**
- * This function is used to resolve the absolute path of a package.
- * It is needed in projects that use Yarn PnP or are set up within a monorepo.
+/****
+ * Returns the absolute directory path of a given package by resolving its `package.json`.
+ *
+ * Useful for environments like Yarn PnP or monorepos where package resolution requires explicit handling.
+ *
+ * @param value - The name of the package to resolve.
+ * @returns The absolute path to the package's directory.
  */
 function getAbsolutePath(value: string): string {
   return dirname(require.resolve(join(value, "package.json")));

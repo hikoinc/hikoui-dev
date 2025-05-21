@@ -1,6 +1,13 @@
 import type {PlopTypes} from "@turbo/gen";
 
-// Learn more about Turborepo Generators at https://turborepo.com/docs/guides/generating-code
+/**
+ * Registers a Plop generator for creating new React components in the internal UI library.
+ *
+ * The generator prompts for a component name, creates a TypeScript React component file using a template,
+ * and appends an export entry to the `package.json` under the `"exports"` field.
+ *
+ * @param plop - The Plop API used to register the generator.
+ */
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   // A simple generator to add a new React component to the internal UI library
