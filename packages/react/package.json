@@ -2,6 +2,7 @@
   "name": "@hikoui-dev/react",
   "version": "0.0.0",
   "scripts": {
+    "build": "tsup",
     "depcheck": "pnpm exec depcheck",
     "eslint": "eslint . --max-warnings 0",
     "eslint:fix": "eslint . --fix --max-warnings 0",
@@ -24,6 +25,7 @@
     "depcheck": "^1.4.7",
     "eslint": "^9.27.0",
     "sort-package-json": "^3.0.0",
+    "tsup": "^8.5.0",
     "typescript": "5.8.2"
   },
   "publishConfig": {

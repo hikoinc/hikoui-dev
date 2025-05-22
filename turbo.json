@@ -20,12 +20,12 @@
     "depcheck": {
       "dependsOn": ["^depcheck"]
     },
+    "build": {
+      "dependsOn": ["^build"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
-    },
-    "build": {
-      "dependsOn": ["^build"]
     }
   }
 }
