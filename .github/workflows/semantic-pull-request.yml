@@ -25,8 +25,16 @@ jobs:
             revert
             style
             test
+          requireScope: true
+          disallowScopes: |
+            [A-Z]
+          subjectPattern: '^[a-z0-9\s\-\_.,!]+$'
+          subjectPatternError: |
+            The subject "{subject}" found in the pull request title "{title}"
+            must contain only lowercase letters, numbers, spaces, and allowed punctuation ( - _ . , ! ).
           ignoreLabels: |
             bot
             ignore-semantic-pull-request
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
