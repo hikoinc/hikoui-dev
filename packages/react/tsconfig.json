@@ -1,5 +1,5 @@
 {
-  "extends": "@hikoui-dev/typescript-config-hikoui/react.json",
+  "extends": "@hikoui/typescript-config-hikoui/react.json",
   "compilerOptions": {
     "outDir": "dist",
     "declaration": true,

@@ -11,9 +11,17 @@ reviews:
     base_branches:
       - "main"
       - "canary"
+      - "build/.*"
       - "chore/.*"
+      - "ci/.*"
+      - "docs/.*"
       - "feat/.*"
       - "fix/.*"
+      - "perf/.*"
+      - "refactor/.*"
+      - "revert/.*"
+      - "style/.*"
+      - "test/.*"
     ignore_title_keywords:
       - "DO NOT MERGE"
       - "ci(changesets)"

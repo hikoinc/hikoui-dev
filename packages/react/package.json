@@ -1,8 +1,49 @@
 {
   "name": "@hikoui-dev/react",
   "version": "0.0.0",
+  "description": "Minimal React UI components built with Tailwind CSS and TypeScript",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "tailwindcss",
+    "typescript",
+    "design",
+    "minimal",
+    "clean",
+    "frontend",
+    "open source"
+  ],
+  "homepage": "https://hikoui.com",
+  "bugs": {
+    "url": "https://github.com/hikoinc/hikoui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hikoinc/hikoui.git",
+    "directory": "packages/react"
+  },
+  "license": "MIT",
+  "author": "Joe Takara <anuchit.boonsom@gmail.com>",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "depcheck": "pnpm exec depcheck",
+    "build": "tsup",
+    "clean": "rimraf dist .turbo",
+    "dev": "tsup --watch",
     "eslint": "eslint . --max-warnings 0",
     "eslint:fix": "eslint . --fix --max-warnings 0",
     "generate-component": "turbo gen react-component",
@@ -15,16 +56,20 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@hikoui-dev/eslint-config-hikoui": "workspace:*",
-    "@hikoui-dev/typescript-config-hikoui": "workspace:*",
+    "@hikoui/eslint-config-hikoui": "workspace:*",
+    "@hikoui/typescript-config-hikoui": "workspace:*",
     "@turbo/gen": "^2.5.0",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
-    "depcheck": "^1.4.7",
     "eslint": "^9.27.0",
     "sort-package-json": "^3.0.0",
+    "tsup": "^8.5.0",
     "typescript": "5.8.2"
+  },
+  "peerDependencies": {
+    "react": ">=18 || >=19.0.0-rc.0",
+    "react-dom": ">=18 || >=19.0.0-rc.0"
   },
   "publishConfig": {
     "access": "public"

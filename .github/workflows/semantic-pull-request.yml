@@ -34,7 +34,6 @@ jobs:
             must contain only lowercase letters, numbers, spaces, and allowed punctuation ( - _ . , ! ).
           ignoreLabels: |
             bot
-            ignore-semantic-pull-request
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

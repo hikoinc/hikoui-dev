@@ -1,9 +1,9 @@
 import storybookPlugin from "eslint-plugin-storybook";
-import { config as baseConfig } from "@hikoui-dev/eslint-config-hikoui/react";
+import { config as reactConfig } from "@hikoui/eslint-config-hikoui/react";
 
 /** @type {import("eslint").Linter.Config} */
 const config = [
-  ...baseConfig,
+  ...reactConfig,
   {
     plugins: {
       storybook: storybookPlugin,
@@ -11,6 +11,9 @@ const config = [
     rules: {
       ...storybookPlugin.configs.recommended.rules,
     },
+  },
+  {
+    ignores: ["storybook-static"],
   },
 ];
 

@@ -1,4 +1,11 @@
-import { config } from "@hikoui-dev/eslint-config-hikoui/base";
+import { config } from "@hikoui/eslint-config-hikoui/base";
 
 /** @type {import("eslint").Linter.Config} */
-export default config;
+const configs = [
+  {
+    ignores: ["**/dist/**", "**/storybook-static/**"],
+  },
+  ...config,
+];
+
+export default configs;
