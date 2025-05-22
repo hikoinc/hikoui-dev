@@ -26,8 +26,7 @@ jobs:
             style
             test
           requireScope: true
-          disallowScopes: |
-            [A-Z]
+          scopePattern: "^[a-z]+$"
           subjectPattern: '^[a-z0-9\s\-\_.,!]+$'
           subjectPatternError: |
             The subject "{subject}" found in the pull request title "{title}"
