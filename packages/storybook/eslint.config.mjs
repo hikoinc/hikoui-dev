@@ -12,6 +12,9 @@ const config = [
       ...storybookPlugin.configs.recommended.rules,
     },
   },
+  {
+    ignores: ["storybook-static"],
+  },
 ];
 
 export default config;

@@ -2,17 +2,22 @@
   "name": "hikoui",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "depcheck": "pnpm exec depcheck || true && turbo run depcheck",
-    "dev": "turbo run dev",
-    "eslint": "eslint . --max-warnings 0 || true && turbo run eslint",
-    "eslint:fix": "eslint . --fix --max-warnings 0 || true && turbo run eslint:fix",
+    "build": "turbo build",
+    "clean": "pnpm clean:turbo && pnpm clean:lock && pnpm clean:node-modules && pnpm install --hoist",
+    "clean:changelogs": "rimraf ./packages/**/**/CHANGELOG.md",
+    "clean:lock": "rimraf ./pnpm-lock.yaml",
+    "clean:node-modules": "rimraf ./apps/**/node_modules && rimraf ./packages/**/**/node_modules && rimraf ./node_modules",
+    "clean:turbo": "turbo clean && rimraf ./node_modules/.cache/turbo",
+    "depcheck": "pnpm exec depcheck || true && turbo depcheck",
+    "dev": "turbo dev",
+    "eslint": "eslint . --max-warnings 0 || true && turbo eslint",
+    "eslint:fix": "eslint . --fix --max-warnings 0 && true && turbo eslint:fix",
     "prepare": "husky install",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "sort-package-json": "pnpm exec sort-package-json || true && turbo run sort-package-json",
-    "sort-package-json:check": "pnpm exec sort-package-json --check || true && turbo run sort-package-json:check",
-    "typescheck": "turbo run typescheck"
+    "sort-package-json": "pnpm exec sort-package-json && turbo sort-package-json",
+    "sort-package-json:check": "pnpm exec sort-package-json --check || true && turbo sort-package-json:check",
+    "typescheck": "turbo typescheck"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
@@ -26,12 +31,13 @@
     "lint-staged": "^16.0.0",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "rimraf": "^6.0.1",
     "sort-package-json": "^3.0.0",
     "tsup": "^8.5.0",
     "turbo": "^2.5.3",
     "typescript": "5.8.2"
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=18"
   }

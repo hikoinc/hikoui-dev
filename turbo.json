@@ -23,6 +23,9 @@
     "build": {
       "dependsOn": ["^build"]
     },
+    "clean": {
+      "dependsOn": ["^clean"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

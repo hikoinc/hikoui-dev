@@ -3,9 +3,8 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   entry: ["src/index.ts"],
   format: ["cjs", "esm"],
-  dts: true,
-  splitting: false,
-  sourcemap: true,
   clean: true,
-  outDir: "dist",
+  target: "es2019",
+  dts: true,
+  banner: { js: '"use client";' },
 });

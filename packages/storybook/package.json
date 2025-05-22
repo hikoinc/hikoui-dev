@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build-storybook": "storybook build",
+    "build": "storybook build",
+    "clean": "rimraf storybook-static",
     "depcheck": "pnpm exec depcheck",
     "eslint": "eslint . --max-warnings 0",
     "eslint:fix": "eslint . --fix --max-warnings 0",
@@ -12,11 +13,6 @@
     "sort-package-json:check": "pnpm exec sort-package-json --check",
     "storybook": "storybook dev -p 6006",
     "typescheck": "tsc --noEmit"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   },
   "dependencies": {
     "react": "^19.1.0",
