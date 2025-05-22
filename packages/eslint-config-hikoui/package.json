@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "type": "module",
   "exports": {
-    "./base": "./base.js",
-    "./react": "./react.js"
+    "./base": "./base.mjs",
+    "./react": "./react.mjs"
   },
   "scripts": {
     "depcheck": "pnpm exec depcheck",
