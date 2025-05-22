@@ -1,19 +1,12 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    {
-      "repo": "hikoinc/hikoui-dev"
-    }
-  ],
+  "changelog": ["@changesets/changelog-github", { "repo": "hikoinc/hikoui-dev" }],
   "commit": false,
   "fixed": [],
   "linked": [],
   "access": "public",
   "baseBranch": "canary",
   "updateInternalDependencies": "patch",
-  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
-    "onlyUpdatePeerDependentsWhenOutOfRange": true
-  },
-  "ignore": []
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": { "onlyUpdatePeerDependentsWhenOutOfRange": true },
+  "ignore": ["storybook"]
 }

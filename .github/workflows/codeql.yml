@@ -17,6 +17,7 @@ jobs:
       packages: read
       actions: read
       contents: read
+      checks: write
 
     strategy:
       fail-fast: false

@@ -24,9 +24,9 @@ body:
     attributes:
       label: Prior Investigation
       description: Please confirm that you have already checked for duplicate issues.
+      required: true
       options:
         - label: I have searched existing issues, discussions, and pull requests to confirm this is not a duplicate.
-          required: true
 
   - type: input
     id: version

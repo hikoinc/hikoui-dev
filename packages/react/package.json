@@ -1,7 +1,7 @@
 {
   "name": "@hikoui-dev/react",
   "version": "1.0.0",
-  "description": "Minimal React UI components built with Tailwind CSS and TypeScript",
+  "description": "Hikoui is a minimal-design React + Tailwind CSS component system for fast, scalable UI development.",
   "keywords": [
     "react",
     "ui",

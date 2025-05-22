@@ -9,7 +9,6 @@ reviews:
     enabled: true
     drafts: false
     base_branches:
-      - "main"
       - "canary"
       - "build/.*"
       - "chore/.*"
