@@ -1,5 +1,5 @@
 {
-  "name": "@libs/typescript-config-hikoui",
+  "name": "@hikoui/typescript-config-hikoui",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {

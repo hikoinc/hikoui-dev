@@ -68,7 +68,7 @@ importers:
       "@hikoui/eslint-config-hikoui":
         specifier: workspace:*
         version: link:../../libs/eslint-config-hikoui
-      "@libs/typescript-config-hikoui":
+      "@hikoui/typescript-config-hikoui":
         specifier: workspace:*
         version: link:../../libs/typescript-config-hikoui
       "@storybook/addon-essentials":
@@ -180,7 +180,7 @@ importers:
       "@hikoui/eslint-config-hikoui":
         specifier: workspace:*
         version: link:../../libs/eslint-config-hikoui
-      "@libs/typescript-config-hikoui":
+      "@hikoui/typescript-config-hikoui":
         specifier: workspace:*
         version: link:../../libs/typescript-config-hikoui
       "@turbo/gen":
