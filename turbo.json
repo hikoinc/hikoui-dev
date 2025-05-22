@@ -17,9 +17,6 @@
     "sort-package-json:check": {
       "dependsOn": ["^sort-package-json:check"]
     },
-    "depcheck": {
-      "dependsOn": ["^depcheck"]
-    },
     "build": {
       "dependsOn": ["^build"]
     },

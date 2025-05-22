@@ -7,13 +7,11 @@
     "./react": "./react.js"
   },
   "scripts": {
-    "depcheck": "pnpm exec depcheck",
     "sort-package-json": "pnpm exec sort-package-json",
     "sort-package-json:check": "pnpm exec sort-package-json --check"
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
-    "depcheck": "^1.4.7",
     "eslint": "^9.27.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-only-warn": "^1.1.0",
