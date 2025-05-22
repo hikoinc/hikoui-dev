@@ -56,7 +56,7 @@
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@lib/eslint-config-hikoui": "workspace:*",
+    "@hikoui/eslint-config-hikoui": "workspace:*",
     "@libs/typescript-config-hikoui": "workspace:*",
     "@turbo/gen": "^2.5.0",
     "@types/node": "^22.15.3",

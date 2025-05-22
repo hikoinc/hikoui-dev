@@ -1,5 +1,5 @@
 {
-  "name": "@hikoui-dev/storybook",
+  "name": "@hikoui/storybook",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
-    "@lib/eslint-config-hikoui": "workspace:*",
+    "@hikoui/eslint-config-hikoui": "workspace:*",
     "@libs/typescript-config-hikoui": "workspace:*",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-onboarding": "^8.6.14",

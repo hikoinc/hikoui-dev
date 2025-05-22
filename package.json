@@ -24,7 +24,7 @@
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
     "@commitlint/types": "^19.8.1",
-    "@lib/eslint-config-hikoui": "workspace:*",
+    "@hikoui/eslint-config-hikoui": "workspace:*",
     "eslint": "^9.27.0",
     "husky": "^8.0.0",
     "lint-staged": "^16.0.0",

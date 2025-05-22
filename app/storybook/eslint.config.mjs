@@ -1,5 +1,5 @@
 import storybookPlugin from "eslint-plugin-storybook";
-import { config as reactConfig } from "@lib/eslint-config-hikoui/react";
+import { config as reactConfig } from "@hikoui/eslint-config-hikoui/react";
 
 /** @type {import("eslint").Linter.Config} */
 const config = [
