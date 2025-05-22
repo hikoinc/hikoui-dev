@@ -1,0 +1,75 @@
+name: Quality Check
+
+on:
+  pull_request:
+    branches: [canary]
+
+jobs:
+  eslint:
+    name: Lint Code with ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run ESLint
+        run: pnpm eslint
+
+  typescheck:
+    name: Type Check with TypeScript
+    runs-on: ubuntu-latest
+    needs: eslint
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run Type Check
+        run: pnpm typescheck
+
+  format:
+    name: Check Code Formatting
+    runs-on: ubuntu-latest
+    needs: [eslint, typescheck]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run Prettier Check
+        run: pnpm prettier:check
+
+  sort-package-json:
+    name: Validate package.json Order
+    runs-on: ubuntu-latest
+    needs: [eslint, typescheck, format]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Check Sorted package.json
+        run: pnpm sort-package-json:check
+
+  build:
+    name: Build and Compile Project
+    runs-on: ubuntu-latest
+    needs: [eslint, typescheck, format, sort-package-json]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Run Project Build
+        run: pnpm build

@@ -1,0 +1,15 @@
+{
+  "name": "@hikoui/typescript-config-hikoui",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "sort-package-json": "pnpm exec sort-package-json",
+    "sort-package-json:check": "pnpm exec sort-package-json --check"
+  },
+  "devDependencies": {
+    "sort-package-json": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

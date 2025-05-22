@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+if [ "$CI" = "true" ]; then
+  echo "CI detected: skipping commit-msg hook."
+  exit 0
+fi
+
+pnpm exec commitlint --edit "$1"

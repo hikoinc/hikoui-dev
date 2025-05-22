@@ -1,0 +1,29 @@
+name: Pre Release
+
+on:
+  push:
+    branches: [canary]
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  changeset-pr:
+    name: Create Changeset Pull Request
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js and Install Dependencies
+        uses: ./.github/actions/setup
+
+      - name: Create Changeset Pull Request
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

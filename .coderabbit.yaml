@@ -1,0 +1,29 @@
+language: en
+early_access: false
+reviews:
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - "main"
+      - "canary"
+      - "build/.*"
+      - "chore/.*"
+      - "ci/.*"
+      - "docs/.*"
+      - "feat/.*"
+      - "fix/.*"
+      - "perf/.*"
+      - "refactor/.*"
+      - "revert/.*"
+      - "style/.*"
+      - "test/.*"
+    ignore_title_keywords:
+      - "DO NOT MERGE"
+      - "Version Packages"
+chat:
+  auto_reply: true
