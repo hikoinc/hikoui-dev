@@ -26,12 +26,6 @@
   "license": "MIT",
   "author": "Joe Takara <anuchit.boonsom@gmail.com>",
   "sideEffects": false,
-  "files": [
-    "dist"
-  ],
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -40,6 +34,12 @@
     },
     "./package.json": "./package.json"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "clean": "rimraf dist .turbo",
