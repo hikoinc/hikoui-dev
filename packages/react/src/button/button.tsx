@@ -8,7 +8,7 @@ interface ButtonProps {
   appName?: string;
 }
 
-export const Button = ({ children, className, appName }: ButtonProps) => {
+const Button = ({ children, className, appName }: ButtonProps) => {
   const handleClick = () => {
     alert(`Hello from your ${appName ?? "new"} app!`);
   };
@@ -19,3 +19,5 @@ export const Button = ({ children, className, appName }: ButtonProps) => {
     </button>
   );
 };
+
+export default Button;
