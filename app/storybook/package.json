@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
-    "@hikoui-dev/eslint-config-hikoui": "workspace:*",
-    "@hikoui-dev/typescript-config-hikoui": "workspace:*",
+    "@lib/eslint-config-hikoui": "workspace:*",
+    "@libs/typescript-config-hikoui": "workspace:*",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-onboarding": "^8.6.14",
     "@storybook/blocks": "^8.6.14",

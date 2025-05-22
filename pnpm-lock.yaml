@@ -19,9 +19,9 @@ importers:
       "@commitlint/types":
         specifier: ^19.8.1
         version: 19.8.1
-      "@hikoui-dev/eslint-config-hikoui":
+      "@lib/eslint-config-hikoui":
         specifier: workspace:*
-        version: link:packages/eslint-config-hikoui
+        version: link:libs/eslint-config-hikoui
       eslint:
         specifier: ^9.27.0
         version: 9.27.0(jiti@2.4.2)
@@ -65,12 +65,12 @@ importers:
       "@chromatic-com/storybook":
         specifier: ^3
         version: 3.2.6(react@19.1.0)(storybook@8.6.14(prettier@3.5.3))
-      "@hikoui-dev/eslint-config-hikoui":
+      "@lib/eslint-config-hikoui":
         specifier: workspace:*
-        version: link:../../packages/eslint-config-hikoui
-      "@hikoui-dev/typescript-config-hikoui":
+        version: link:../../libs/eslint-config-hikoui
+      "@libs/typescript-config-hikoui":
         specifier: workspace:*
-        version: link:../../packages/typescript-config-hikoui
+        version: link:../../libs/typescript-config-hikoui
       "@storybook/addon-essentials":
         specifier: ^8.6.14
         version: 8.6.14(@types/react@19.1.0)(storybook@8.6.14(prettier@3.5.3))
@@ -126,7 +126,7 @@ importers:
         specifier: ^3.1.4
         version: 3.1.4(@types/node@22.15.21)(@vitest/browser@3.1.4)(jiti@2.4.2)(yaml@2.8.0)
 
-  packages/eslint-config-hikoui:
+  libs/eslint-config-hikoui:
     devDependencies:
       "@eslint/js":
         specifier: ^9.27.0
@@ -162,6 +162,12 @@ importers:
         specifier: ^8.32.0
         version: 8.32.1(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.2)
 
+  libs/typescript-config-hikoui:
+    devDependencies:
+      sort-package-json:
+        specifier: ^3.0.0
+        version: 3.2.1
+
   packages/react:
     dependencies:
       react:
@@ -171,12 +177,12 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
-      "@hikoui-dev/eslint-config-hikoui":
+      "@lib/eslint-config-hikoui":
         specifier: workspace:*
-        version: link:../eslint-config-hikoui
-      "@hikoui-dev/typescript-config-hikoui":
+        version: link:../../libs/eslint-config-hikoui
+      "@libs/typescript-config-hikoui":
         specifier: workspace:*
-        version: link:../typescript-config-hikoui
+        version: link:../../libs/typescript-config-hikoui
       "@turbo/gen":
         specifier: ^2.5.0
         version: 2.5.3(@types/node@22.15.21)(typescript@5.8.2)
@@ -201,12 +207,6 @@ importers:
       typescript:
         specifier: 5.8.2
         version: 5.8.2
-
-  packages/typescript-config-hikoui:
-    devDependencies:
-      sort-package-json:
-        specifier: ^3.0.0
-        version: 3.2.1
 
 packages:
   "@adobe/css-tools@4.4.3":

@@ -1,5 +1,5 @@
 {
-  "name": "@hikoui-dev/eslint-config-hikoui",
+  "name": "@lib/eslint-config-hikoui",
   "version": "0.0.0",
   "type": "module",
   "exports": {
