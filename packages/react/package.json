@@ -1,6 +1,6 @@
 {
   "name": "@hikoui-dev/react",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Minimal React UI components built with Tailwind CSS and TypeScript",
   "keywords": [
     "react",
