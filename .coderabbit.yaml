@@ -24,6 +24,6 @@ reviews:
       - "test/.*"
     ignore_title_keywords:
       - "DO NOT MERGE"
-      - "ci(changesets)"
+      - "Version Packages"
 chat:
   auto_reply: true
