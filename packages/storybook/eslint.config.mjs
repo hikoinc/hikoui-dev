@@ -1,9 +1,9 @@
 import storybookPlugin from "eslint-plugin-storybook";
-import { config as baseConfig } from "@hikoui-dev/eslint-config-hikoui/react";
+import { config as reactConfig } from "@hikoui-dev/eslint-config-hikoui/react";
 
 /** @type {import("eslint").Linter.Config} */
 const config = [
-  ...baseConfig,
+  ...reactConfig,
   {
     plugins: {
       storybook: storybookPlugin,
