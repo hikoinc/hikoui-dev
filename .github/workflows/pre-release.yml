@@ -24,6 +24,6 @@ jobs:
       - name: Create Changeset Pull Request
         uses: changesets/action@v1
         with:
-          version: pnpm changeset version
+          version: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
