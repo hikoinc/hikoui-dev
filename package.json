@@ -16,6 +16,7 @@
     "prettier:check": "prettier --check .",
     "sort-package-json": "pnpm exec sort-package-json && turbo sort-package-json",
     "sort-package-json:check": "pnpm exec sort-package-json --check || true && turbo sort-package-json:check",
+    "storybook": "turbo storybook",
     "typescheck": "turbo typescheck"
   },
   "devDependencies": {

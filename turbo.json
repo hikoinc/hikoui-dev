@@ -2,21 +2,6 @@
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
   "tasks": {
-    "eslint:fix": {
-      "dependsOn": ["^eslint:fix"]
-    },
-    "eslint": {
-      "dependsOn": ["^eslint"]
-    },
-    "typescheck": {
-      "dependsOn": ["^typescheck"]
-    },
-    "sort-package-json": {
-      "dependsOn": ["^sort-package-json"]
-    },
-    "sort-package-json:check": {
-      "dependsOn": ["^sort-package-json:check"]
-    },
     "build": {
       "dependsOn": ["^build"]
     },
@@ -26,6 +11,24 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "eslint": {
+      "dependsOn": ["^eslint"]
+    },
+    "eslint:fix": {
+      "dependsOn": ["^eslint:fix"]
+    },
+    "sort-package-json": {
+      "dependsOn": ["^sort-package-json"]
+    },
+    "sort-package-json:check": {
+      "dependsOn": ["^sort-package-json:check"]
+    },
+    "storybook": {
+      "dependsOn": ["^storybook"]
+    },
+    "typescheck": {
+      "dependsOn": ["^typescheck"]
     }
   }
 }

@@ -5,6 +5,7 @@
   "scripts": {
     "build": "storybook build",
     "clean": "rimraf storybook-static",
+    "dev": "pnpm storybook",
     "eslint": "eslint . --max-warnings 0",
     "eslint:fix": "eslint . --fix --max-warnings 0",
     "generate-component": "turbo gen react-component",
