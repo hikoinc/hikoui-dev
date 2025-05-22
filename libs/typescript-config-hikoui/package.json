@@ -1,6 +1,6 @@
 {
   "name": "@hikoui/typescript-config-hikoui",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "sort-package-json": "pnpm exec sort-package-json",
